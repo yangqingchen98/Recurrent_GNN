@@ -53,8 +53,6 @@ class CIFAR10SuperpixelsDataset(InMemoryDataset):
         labels = np.concatenate((trainset.targets, testset.targets))
         images = np.concatenate((trainset.data, testset.data))
         data_list = []
-        print("aaaaaa")
-        print(trainset.data.type())
 
         print(trainset.targets[0])
         print(trainset.data[0].shape)
